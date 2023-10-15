@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+    color: #BFBFBF;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+  
+.background {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+ 
+.logo a, .logo h1 {
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+}
+
+h2 {
+    display: flex;
+    vertical-align: center;
+    margin-left: 10px;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.oscuro {
+    background: #000D0A;
+   
+    /* color: #F2F2F2; */
+  }
+  
+  .oscuro a{
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 20px;
+    
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between; /* Esto coloca .logo a la izquierda y ul a la derecha */
+    align-items: center; /* Esto alinea verticalmente los elementos dentro de nav */
+    padding: 1.25rem 1.5rem;
+    position: fixed;
+    width: 100vw;
+    top:0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+    
+}
+
+/* .nav_link:hover {
+text-decoration:overline;
+text-decoration-color:#A60311;
+} */
+
+.nav_link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #000; /* Color del texto */
+  margin: 0 10px; /* Margen entre los enlaces */
+}
+
+.nav_link::before,
+.nav_link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #A60311; /* Color del subrayado */
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.nav_link::before {
+  top: -3px; /* Ajusta la distancia del subrayado superior */
+}
+
+.nav_link::after {
+  bottom: -3px; /* Ajusta la distancia del subrayado inferior */
+}
+
+.nav_link:hover::before,
+.nav_link:hover::after {
+  transform: scaleX(1);
+}
+
+
+.hero-section {
+    text-align: left;
+    background-image: url('/assets/imgs/bg-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F2F2F2;
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    padding: 9.25rem 3.125rem;
+    height: 100vh;
+    margin-top: 50px;
+  }
+
+  .hero-section h1, h3{
+    
+    text-align: center;
+    line-height:50px;
+    
+  }
+ 
+  .modelo-nike h2, p{
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 40px;
+  }
+  .modelo-nike p, .modelo-adidas p{
+    padding-bottom: 15px;
+    font-size: 40px;
+    color: #0D0D0D;
+  }
+.modelo-nike img, .modelo-adidas img {
+    width: 60px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.seccion_nike{
+  height: 600px;
+    background-image: url(/assets/imgs/fondo2.jpg);
+    color: #fff;
+    text-align: center;
+    line-height:600px;
+}
+
+.seccion_adidas{
+  height: 600px;
+    background-image: url(/assets/imgs/fondo3.png);
+    color: #fff;
+    text-align: center;
+    line-height:600px;
+
+}
+  .galeria-nike, .galeria-adidas {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 50px;
+    flex-wrap: wrap;
+  }
+
+  .galeria-nike img, .galeria-adidas img {
+    width: 30%;
+    margin-bottom: 30px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px ;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+  }
+
+
+  .float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 60px;
+    /* background-color: #00bb2d; */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    /* box-shadow: 2px 2px 3px #999; */
+    z-index: 100;
+    overflow: hidden;
+}
+
+
+  .my-float {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(/assets/imgs/whatsappIcon_a.png);
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+}
+
+.instagram {
+  /* display: inline-block; */
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+  /* footer{
+    
+  } */
+
+
+  
