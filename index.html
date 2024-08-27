@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f7d49264a2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/png" href="./assets/imgs/favicon_io/favicon-32x32.png">
     <title>Invictus Sport | Zapatos de Fubol</title>
     
@@ -28,39 +28,51 @@
     <header class="hero-section">
         <h1>INVICTUS SPORT</h1>
         <h3>Zapatos de fultbol y mas....</h3>
+        <div class="hero__wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
     </header>
 
     <section class="modelo-nike" id="modelos">
-        <h2>Modelos</h2>
-        <p>Nike</p>
-        <img class="modelo_nike_logo" src="/assets/imgs/nikeico.png" alt="">
+        <h2 class="title_sesion">Modelos</h2>
+    </section>
+
+    <section>
+        <!-- <h2 class="title_sesion">Modelos</h2> -->
+         <div class="title_logo">
+            <!-- <p>Nike</p> -->
+            <img class="modelo_logo" src="./assets/imgs/Group.png" alt="" id="nike">
+         </div>
+         <div class="tile__wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000D0A;"></path></svg></div>
     </section>
 
     <section class="seccion_nike background ">    
-        <div class="galeria-nike" id="nike">
-            <img src="/assets/imgs/nike/HyperVenus3.jpg" alt="">
-            <img src="/assets/imgs/nike/mercurialVaporx.jpg" alt="">
-            <img src="/assets/imgs/nike/scoccer.jpg" alt="">
-            <img src="/assets/imgs/nike/techCraft.jpg" alt="">
-            <img src="/assets/imgs/nike/spacecraft.jpg" alt="">
-            <img src="/assets/imgs/nike/mercurialVaporx2.jpg" alt="">
+        <div class="galeria-nike" >
+            <img src="./assets/imgs/nike/HyperVenus3.jpg" alt="zapatos">
+            <img src="./assets/imgs/nike/mercurialVaporx.jpg" alt="zapatos">
+            <img src="./assets/imgs/nike/scoccer.jpg" alt="zapatos">
+            <img src="./assets/imgs/nike/techCraft.jpg" alt="zapatos">
+            <img src="./assets/imgs/nike/spacecraft.jpg" alt="zapatos">
+            <img src="./assets/imgs/nike/mercurialVaporx2.jpg" alt="zapatos">
         </div>
     </section>
 
     <section class="modelo-adidas">
-        <p>Adidas</p>
-        <img class="modelo_nike_logo" src="/assets/imgs/logoadidas2.png" alt="">
+        <!-- <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.47,87.33 C149.99,150.00 224.83,-3.45 500.79,124.83 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #000D0A;"></path></svg></div> -->
+        <div class="title_logo">
+           <!--  <p>Adidas</p> -->
+            <img class="modelo_logo" src="./assets/imgs/adidasPNG8-1.png" alt="">
+        </div>
+        <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000D0A;"></path></svg></div>
     </section>
 
     <section class="seccion_adidas background">
         
         <div class="galeria-adidas" id="adidas">
-            <img src="/assets/imgs/adidas/adidas1.jpg" alt="">
-            <img src="/assets/imgs/adidas/adidas2.jpg" alt="">
-            <img src="/assets/imgs/adidas/adidas3.jpg" alt="">
-            <img src="/assets/imgs/adidas/adidas4.jpg" alt="">
-            <img src="/assets/imgs/adidas/adidas5.jpg" alt="">
-            <img src="/assets/imgs/adidas/adidas6.jpg" alt="">
+            <img src="./assets/imgs/adidas/adidas1.jpg" alt="">
+            <img src="./assets/imgs/adidas/adidas2.jpg" alt="">
+            <img src="./assets/imgs/adidas/adidas3.jpg" alt="">
+            <img src="./assets/imgs/adidas/adidas4.jpg" alt="">
+            <img src="./assets/imgs/adidas/adidas5.jpg" alt="">
+            <img src="./assets/imgs/adidas/adidas6.jpg" alt="">
         </div>
     </section>
 
@@ -68,7 +80,7 @@
         <div class="container-fluid">
             <div class="row p-5 pb-2">
                 <div class="col-xs-12 col-md-6 col-lg-3">
-                    <img src="/assets/imgs/Vector.png " alt="">   
+                    <img src="./assets/imgs/Vector.png " alt="">   
                     <p class="h3">INVICTUS SPORT</p>
                     
                 </div>
@@ -94,9 +106,19 @@
                     </div>
                 </div>
             </div>
-                <div class="col-xs-12 pt-3">
-                <p class="form-control-sm mb-0">&copy; 2023 Tylsonb . All rights reserved.</p>
+            <div class="line"></div>
+                <div class="col-xs-12 pt-3 copyright">
+                    <div class="container">
+
+                        <div class="left"><div class="selector-country"><svg height="15px" width="18px" fill="#fff" viewBox="0 0 42 58"><path d="M21 0C9.4 0 0 9.5 0 21.2 0 39.9 21 58 21 58s21-18.1 21-36.8C42 9.5 32.6 0 21 0zm0 31c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z"></path></svg><span class="country-pin-label">Chile</span></a></div><span>© 2023 tylsonb. Todos los derechos reservados</span></div>
+                        <!-- <div class="left">
+                            <p class="form-control-sm mb-0">&copy; 2023. All rights reserved.</p>
+                            <a href="">terminos y condiciones</a>
+                        </div> -->
+                    </div>       
+
             </div>
+            
         </div>
         <a href="https://api.whatsapp.com/send?phone=56934221764" class="float" target="_blank">
             <i class="my-float"></i>
